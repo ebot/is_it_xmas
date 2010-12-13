@@ -1,0 +1,33 @@
+!!! Strict
+%html{ :xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en" }
+  %head
+    %title
+      Is It Christmas?
+    %link{ :rel => "stylesheet", :type => "text/css", :href => "/stylesheets/iphone.css", :media => "only screen and (max-device-width: 480px)" }
+    %link{ :rel => "stylesheet", :type => "text/css", :href => "/stylesheets/application.css", :media => "screen and (min-device-width: 481px)" }
+    /[if IE]
+      %link{ :rel => "stylesheet", :type => "text/css", :href => "/stylesheets/application.css", :media => "screen" }
+    %link{ :href => "/favicon.ico", :rel => "icon", :type => "image/vnd.microsoft.icon" }
+    %meta{ "http-equiv" => "Content-Type", :content => "text/html;charset=utf-8" }
+    %meta{ :name => "viewport", :content => "user-scalable=no, width=device-width" }
+  %body#page_name
+    #page
+      #header
+        %h1
+          %img{ :src => '/images/santa_claus_64.png', :alt => 'Santa Claus' }
+          = "Santa says, #{@answer}"
+      #content
+        %h2= @message
+        - if @answer == 'Yes!'
+          %img{ :src => '/images/christmas_tree_256.png', :alt => 'Christmas Tree' }
+      #footer
+        Built by
+        %a{ :href => 'http://edbotz.us' }
+          edbotz.us
+        #git
+          Source code available at 
+          %a{ :href => 'http://github.com/ebot/' }
+            github
+        Icons courtesy of 
+        %a{ :href => 'http://www.gettyicons.com/free-icon/101/christmas-icon-set/'}
+          Icon Shock

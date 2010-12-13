@@ -1,0 +1,37 @@
+$background: #5471bd;
+$foreground: white;
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+  font-family: verdana;
+  background: $background url('/images/background.png') repeat-x;
+  color: $foreground; }
+
+h1 { font-size: 250%; }
+
+h2 { font-size: 200%; }
+
+a {
+  color: #97bf09;
+  text-decoration: none;
+  &:hover {
+    color: #ffa600;
+    text-decoration: underline; } }
+
+#header {
+  border-bottom: solid 1px $foreground;
+  padding-bottom: 10px;
+  text-align: center;
+  margin: 0 20px 8px 20px;
+  img {
+    margin-bottom: -20px; } }
+
+#content { text-align: center; }
+
+#footer {
+  font-size: 70%;
+  text-align: center;
+  margin-top: 8px;
+  padding-top: 8px; }

@@ -1,0 +1,3 @@
+h1. Is It Christmas Yet
+
+This "Sinatra":http://www.sinatrarb.com/ web site was created to answer my daughter's question of how many days until Christmas.  It is hosted on "heroku":http://heroku.com and tested using "cucumber":cukes.info tests.  The source code is available on "github":https://github.com/ebot/is_it_xmas.

@@ -2,7 +2,7 @@
 require 'sinatra'
 require 'haml'
 require 'sass'
-require 'Date'
+require 'date'
 
 get '/' do
   # Figure out how many days until christmas
@@ -16,7 +16,7 @@ get '/' do
   end
   
   @answer  = 'No'
-  @message = "There are #{days_til} day(s) until Christmas."
+  @message = "There are #{days_til.to_i} day(s) until Christmas."
   if days_til == 0
     @answer  = 'Yes!'
     @message = "Merry Christmas!" 

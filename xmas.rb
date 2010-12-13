@@ -2,6 +2,7 @@
 require 'sinatra'
 require 'haml'
 require 'sass'
+require 'Date'
 
 get '/' do
   # Figure out how many days until christmas
